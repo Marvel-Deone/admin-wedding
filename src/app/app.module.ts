@@ -10,6 +10,8 @@ import { HeaderComponent } from './public/header/header.component';
 import { ReservationComponent } from './reservation/reservation.component';
 import { GiftComponent } from './gift/gift.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SignInComponent } from './sign-in/sign-in.component';
+import { FormsModule , ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,11 +21,14 @@ import { HttpClientModule } from '@angular/common/http';
     DashboardComponent,
     HeaderComponent,
     ReservationComponent,
-    GiftComponent
+    GiftComponent,
+    SignInComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
     HttpClientModule
   ],
   providers: [],

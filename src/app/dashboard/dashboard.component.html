@@ -368,13 +368,16 @@
                                             S/N</th>
 
                                         <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                            Categories</th>
-
-                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
                                             Name</th>
 
                                         <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                            Pass Code</th>
+
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
                                             Email</th>
+
+                                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                            Phone No</th>
 
                                         <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
                                             Event</th>
@@ -387,9 +390,6 @@
                                         <th
                                             class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
                                             Date</th>
-                                        <th
-                                            class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                            Result</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -404,13 +404,6 @@
                                         <td>
                                             <div class="d-flex px-2 py-1">
                                                 <div class="d-flex flex-column justify-content-center">
-                                                    <h6 class="mb-0 text-sm">{{allReservation.category}}</h6>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="avatar-group mt-2">
-                                                <div class="d-flex flex-column justify-content-center">
                                                     <h6 class="mb-0 text-sm">{{allReservation.name}}</h6>
                                                 </div>
                                             </div>
@@ -418,7 +411,21 @@
                                         <td>
                                             <div class="avatar-group mt-2">
                                                 <div class="d-flex flex-column justify-content-center">
+                                                    <h6 class="mb-0 text-sm">{{allReservation.pass_code}}</h6>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="avatar-group mt-2">
+                                                <div class="d-flex flex-column justify-content-center">
                                                     <h6 class="mb-0 text-sm">{{allReservation.email}}</h6>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="avatar-group mt-2">
+                                                <div class="d-flex flex-column justify-content-center">
+                                                    <h6 class="mb-0 text-sm">{{allReservation.phone_number}}</h6>
                                                 </div>
                                             </div>
                                         </td>

@@ -3,9 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ReservationComponent } from './reservation/reservation.component';
 import { GiftComponent } from './gift/gift.component';
+import { SignInComponent } from './sign-in/sign-in.component';
 
 const routes: Routes = [
-  { path: '',  redirectTo: 'dashboard', pathMatch: 'full' },
+  { path: '',  redirectTo: 'sign-in', pathMatch: 'full' },
+  { path: 'sign-in',  component: SignInComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'reservations', component: ReservationComponent },
   { path: 'gifts', component: GiftComponent },
