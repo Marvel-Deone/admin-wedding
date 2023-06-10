@@ -15,7 +15,8 @@ export class GiftService {
   
   
   GetGifts() {
-    const URI = this.uriseg + '/giftus';
+    // const URI = this.uriseg + '/giftus';
+    const URI = 'https://ayobolu23-api.checkdir.com/api/v1/giftus';
 
     return this.http.get(URI).pipe(map(response => {
       this.gifts = response;

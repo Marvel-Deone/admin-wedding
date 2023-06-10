@@ -15,7 +15,8 @@ export class ReservationService {
   
   
   GetReservation() {
-    const URI = this.uriseg + '/reservations';
+    // const URI = this.uriseg + '/reservations';
+    const URI = 'https://ayobolu23-api.checkdir.com/api/v1/reservations';
 
     return this.http.get(URI).pipe(map(response => {
       this.reservations = response;
